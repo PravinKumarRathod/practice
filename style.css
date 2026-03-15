@@ -8,6 +8,12 @@ html, body {
     height: 100%; 
     width: 100%;
     background-color: black;
+}
+
+main{
+    height: 100%; 
+    width: 100%;
+    background-color: black;
     color: #fff;
     display: flex;
     align-items: center;
@@ -16,13 +22,14 @@ html, body {
     gap: 40px;
 }
 
-#box{
-    height: 400px;
-    width: 400px;
-    background-color: rgb(99,99,8);
-    border:5px solid white;
+h1{
+    background-color: burlywood;
+    padding: 50px;
+    color: black;
+    font-size: 30px;
     border-radius: 20px;
 }
+
 
 button {
     background-color: red;
