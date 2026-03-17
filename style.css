@@ -11,30 +11,70 @@ html, body {
     overflow: hidden;
 }
 
+
 main{
-    height: 100%; 
+    height: 100%;
     width: 100%;
     background-color: black;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 40px;
 }
 
+#card{
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 50px 30px;
+    font-family: monospace;
+}
 
-
-button {
-    background-color: red;
-    padding: 20px 30px;
+#card p{
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 20px;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    z-index: 2;
+    font-weight:500;
 }
-button:active{
-    scale: 0.9;
+#card span{
+    font-weight: 700;
+    color: royalblue;
+}
+#outer{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(200, 199, 199);
+    border-radius: 50px;
+}
+
+
+#inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 50px;
+}
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#bottom h2{
+    font-size: 60px;
+}
+
+#bottom button{
+    padding: 12px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+}
+
+#bottom button:active{
+    scale: 0.95;
 }
