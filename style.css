@@ -10,45 +10,117 @@ body {
     width: 100%;
 }
 
-main {
+main{
     height: 100%;
     width: 100%;
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: rgb(18, 18, 18);
+    padding: 15px;
+    overflow: auto;
 }
 
-.card{
-    height: 400px;
-    width: 250px;
-    text-align: center;
-    background-color: rgb(255, 250, 241);
-    border-radius: 10px;
-    padding: 30px;
+section{
+    height: 100%;
+    width: 360px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 8px;
 }
-.card img{
-    height: 150px;
-    width: 150px;
+
+#all-reels{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+#all-reels::-webkit-scrollbar{
+    display: none;
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.reel>video{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    border-radius: 8px;
+}
+
+.reel .bottom{
+    padding: 30px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.025),black);
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.reel .user{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.reel .bottom button{
+    background-color: transparent;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+    border: 0.8px solid white;
+    cursor: pointer;
+}
+.reel .bottom img{
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    object-fit: cover;
 }
-.card h3{
-    font-size: 30px;
-    
+.reel .bottom .user h4{
+    color: rgb(226, 231, 255);
+    font-weight: 600;
 }
-
-.card h4{
-    font-size: 22px;
-    margin-top: 12px;
-    color: darkmagenta;
-    margin-bottom: 10px;
-    white-space: nowrap;
+.reel .bottom h3{
+    padding-top: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.card p{
-    font-size: 16px;
+.right{
+    width: 40px;
+    position:absolute;
+    right: 1%;
+    bottom: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.right h5{
+    font-size: 15px;
+}
+.right .icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.right i{
+    font-weight: 100;
+}
+.right h4{
+    font-weight: 100;
+}
+
+.love{
+    color: red;
 }
